@@ -12,12 +12,25 @@ Menu bar battery manager for Apple Silicon Macs.</p>
 
 ## Install
 
+### Homebrew
+
+```sh
+brew install --cask urfreespace/liwu/liwu
+```
+
+### Direct download
+
 Download the latest DMG from [Releases](https://github.com/urfreespace/liwu-releases/releases/latest),
-open it, and drag Liwu to Applications. On first launch, approve the helper —
-charging control needs a small system component.
+open it, and drag Liwu to Applications.
+
+---
+
+Either way, on first launch you'll be asked to approve the helper — charging
+control needs a small system component.
 
 Builds are signed with a Developer ID certificate, notarized by Apple, and
-stapled. Updates are delivered in-app.
+stapled. Updates are delivered in-app, so Homebrew is only needed for the
+initial install.
 
 ## What it does
 
