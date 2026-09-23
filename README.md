@@ -3,74 +3,69 @@
 </p>
 
 <h1 align="center">Liwu</h1>
-<p align="center"><b>Charge your battery to just right.</b><br>
-Menu bar battery manager for Apple Silicon Macs.</p>
+<p align="center"><b>Small tools for your MacBook, right in the menu bar.</b><br>
+Charging targets, live power, Keep Awake, calibration, schedules, and menu bar organization.</p>
 
 <p align="center">
-  <img src="https://liwu.app/screenshots/popover.png" width="420" alt="Liwu popover: drag the battery bar to set a charge limit">
+  <img src="https://liwu.app/screenshots/v2-popovers/battery-popover-current.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
+  <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-current.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden and Visible icon groups">
 </p>
 
-## Install
+## Choose your version
 
-### Homebrew
+| Version | Requirements | Download |
+|---|---|---|
+| **Liwu 2** | Apple Silicon MacBook, **macOS 26.7 or later** | [Latest release](https://github.com/urfreespace/liwu-releases/releases/latest) |
+| **Liwu 1 Legacy** | Apple Silicon MacBook, macOS 14 through versions before 26.7 | [Legacy website](https://liwu.app/legacy) · [1.0.8 installer](https://github.com/urfreespace/liwu-releases/releases/download/v1.0.8/Liwu-1.0.8.dmg) |
+
+Liwu 1 is frozen and receives no further feature updates. Do not install it on macOS 26.7 or later.
+
+## Install Liwu 2
+
+With Homebrew:
 
 ```sh
 brew install --cask urfreespace/liwu/liwu
 ```
 
-### Direct download
+Or download the DMG from [Releases](https://github.com/urfreespace/liwu-releases/releases/latest), open it, and drag Liwu to Applications.
 
-Download the latest DMG from [Releases](https://github.com/urfreespace/liwu-releases/releases/latest),
-open it, and drag Liwu to Applications.
+On first launch, follow the prompts to approve Liwu's background component. Charging control needs this component. Menu bar organization separately requests Accessibility and Screen Recording permissions when you use it to read and move icons.
 
----
+Releases are signed with a Developer ID certificate and notarized by Apple. Updates are available inside the app.
 
-Either way, on first launch you'll be asked to approve the helper — charging
-control needs a small system component.
+## What Liwu 2 does
 
-Builds are signed with a Developer ID certificate, notarized by Apple, and
-stapled. Updates are delivered in-app, so Homebrew is only needed for the
-initial install.
+| Feature | Free | Pro |
+|---|:---:|:---:|
+| Charging targets and named presets | ✓ | ✓ |
+| Adapter input and battery charging/discharging power | ✓ | ✓ |
+| Keep Awake with the lid open | ✓ | ✓ |
+| Drag menu bar icons between Hidden and Visible groups | ✓ | ✓ |
+| Top Up to temporarily request 100% | | ✓ |
+| Five-step battery calibration | | ✓ |
+| Scheduled charging targets and calibration | | ✓ |
+| Keep Awake with the lid closed | | ✓ |
 
-## What it does
+**Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior.
 
-Set a hard charge limit (20–100%) and charging stops there — your Mac runs off
-the adapter while the battery rests at a healthy level.
+**Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
 
-| | Free | Pro ($9.99 one-time) |
-|---|---|---|
-| Charge limit (20–100%) | ✓ | ✓ |
-| Optimized-charging conflict detection | ✓ | ✓ |
-| Heat protection | ✓ | ✓ |
-| Stop charging during sleep | ✓ | ✓ |
-| Live battery readings (current, temperature) | ✓ | ✓ |
-| Keep awake (lid open) | ✓ | ✓ |
-| Stay awake until limit, then sleep | | ✓ |
-| Keep awake (lid closed) | | ✓ |
-| Discharge to target / auto-discharge | | ✓ |
-| One-tap Top Up to 100% | | ✓ |
-| Battery calibration | | ✓ |
-| Scheduled tasks | | ✓ |
-| Range mode | | ✓ |
-| MagSafe LED control | | ✓ |
+**Menu bar:** manage icons inside Liwu, use the eye button to temporarily reveal the hidden group, and restore icons by dragging them back to Visible. Liwu and fixed system controls stay visible. Quitting reveals the hidden group; another app or system restart may require regrouping.
 
-One-time purchase, no subscription. Local-only — no tracking or telemetry.
+Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control.
 
-## Requirements
+[Liwu Pro](https://liwu.app/#pricing) is a $9.99 one-time purchase with no subscription. Existing Liwu 1 Pro purchases also unlock Liwu 2 Pro.
 
-Apple Silicon (M-series) · macOS 14+
+## About this repository
 
-## Why a separate repository
-
-Liwu's source repository is private, and release assets on a private repository
-cannot be downloaded anonymously. This public repository exists solely so that
-download links work for everyone — and so that binaries never enter the source
-repository's git history.
+This repository distributes signed installers and hosts public issue reports. Liwu's source code is private. Download the DMG attached to a release; GitHub's automatically generated source archives do not contain the app.
 
 ## Links
 
 - [Website](https://liwu.app/?utm_source=github&utm_medium=readme)
 - [Changelog](https://liwu.app/changelog?utm_source=github&utm_medium=readme)
+- [Liwu 1 Legacy](https://liwu.app/legacy)
 - [Report an issue](https://github.com/urfreespace/liwu-releases/issues)
 
 ---
