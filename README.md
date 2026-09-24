@@ -4,7 +4,7 @@
 
 <h1 align="center">Liwu</h1>
 <p align="center"><b>Small tools for your MacBook, right in the menu bar.</b><br>
-Charging targets, live power, Keep Awake, calibration, schedules, and menu bar organization.</p>
+Charging targets, Sailing, live power, Keep Awake, calibration, schedules, and menu bar organization.</p>
 
 <p align="center">
   <img src="https://liwu.app/screenshots/v2-popovers/battery-popover-current.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
@@ -43,11 +43,14 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Keep Awake with the lid open | ✓ | ✓ |
 | Drag menu bar icons between Hidden and Visible groups | ✓ | ✓ |
 | Top Up to temporarily request 100% | | ✓ |
+| Sailing charging range | | ✓ |
 | Five-step battery calibration | | ✓ |
 | Scheduled charging targets and calibration | | ✓ |
 | Keep Awake with the lid closed | | ✓ |
 
 **Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior.
+
+**Sailing (Pro):** keep your regular limit as the upper endpoint and choose a 5–20 percentage-point drop before recharging, with a lower endpoint of at least 20%. Firmware support must be confirmed first, even for limits of 80% or higher. The interval uses raw battery capacity, which can differ from the displayed percentage. Top Up temporarily suspends Sailing; calibration restores it when returning to the regular target.
 
 **Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
 
