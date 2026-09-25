@@ -58,7 +58,9 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 
 **Menu bar:** manage icons inside Liwu, use the eye button to temporarily reveal the hidden group, and restore icons by dragging them back to Visible. Liwu and fixed system controls stay visible. Quitting reveals the hidden group; another app or system restart may require regrouping.
 
-Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control.
+Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control. The helper exits once cleanup is confirmed and no new session or operation needs it. Unresolved cleanup retains its recovery state.
+
+**Homebrew removal:** `brew uninstall --cask liwu` quits Liwu and runs its controlled cleanup before removing the app, unregistering the helper and login item. Removal stops if cleanup fails. Preferences and licenses are retained. Homebrew upgrades and reinstalls run the same cleanup; re-enable **Launch at login** afterward if you use it.
 
 [Liwu Pro](https://liwu.app/#pricing) is a $9.99 one-time purchase with no subscription. Existing Liwu 1 Pro purchases also unlock Liwu 2 Pro.
 
