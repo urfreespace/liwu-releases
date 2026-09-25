@@ -54,7 +54,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 
 **Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
 
-**Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
+**Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
 
 **Menu bar:** manage icons inside Liwu, use the eye button to temporarily reveal the hidden group, and restore icons by dragging them back to Visible. Liwu and fixed system controls stay visible. Quitting reveals the hidden group; another app or system restart may require regrouping.
 
