@@ -48,7 +48,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Scheduled charging targets and calibration | | ✓ |
 | Keep Awake with the lid closed | | ✓ |
 
-**Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior.
+**Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior. For targets below 80% or Sailing, the battery bar also shows a raw capacity estimate when it differs from the macOS percentage, with an explanation button for the difference.
 
 **Sailing (Pro):** keep your regular limit as the upper endpoint and choose a 5–20 percentage-point drop before recharging, with a lower endpoint of at least 20%. Firmware support must be confirmed first, even for limits of 80% or higher. The interval uses raw battery capacity, which can differ from the displayed percentage. Top Up temporarily suspends Sailing; calibration restores it when returning to the regular target.
 
