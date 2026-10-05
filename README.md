@@ -8,7 +8,7 @@ Charging targets, Sailing, live power, Keep Awake, calibration, schedules, and m
 
 <p align="center">
   <img src="https://liwu.app/screenshots/v2-popovers/battery-popover-current.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
-  <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-current.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden and Visible icon groups">
+  <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-zones.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden, Visible, and Always Hidden icon groups">
 </p>
 
 ## Choose your version
@@ -41,7 +41,8 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Charging targets and named presets | ✓ | ✓ |
 | Adapter input and battery charging/discharging power | ✓ | ✓ |
 | Keep Awake with the lid open | ✓ | ✓ |
-| Drag menu bar icons between Hidden and Visible groups | ✓ | ✓ |
+| Sort menu bar icons into Always Hidden, Hidden, and Visible groups | ✓ | ✓ |
+| Show or hide the Hidden group from arrows in the menu bar | ✓ | ✓ |
 | Top Up to temporarily request 100% | | ✓ |
 | Sailing charging range | | ✓ |
 | Five-step battery calibration | | ✓ |
@@ -56,7 +57,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 
 **Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
 
-**Menu bar:** manage icons inside Liwu, use the eye button to temporarily reveal the hidden group, and restore icons by dragging them back to Visible. Liwu and fixed system controls stay visible. Quitting reveals the hidden group; another app or system restart may require regrouping.
+**Menu bar:** sort icons into three groups inside Liwu. Click the arrows that Liwu adds to the menu bar to show or hide the Hidden group; right-click them for Menu Bar settings. Icons in Always Hidden stay out of the menu bar until you move them to another group. Restore an icon by dragging it back to Visible. Liwu and fixed system controls stay visible. Quitting reveals every group; another app or system restart may require regrouping. On a crowded menu bar with a display notch, macOS may not accept a move whose drop point falls behind the notch; Liwu reports that the move was not confirmed and leaves the groups unchanged.
 
 Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control. The helper exits once cleanup is confirmed and no new session or operation needs it. Unresolved cleanup retains its recovery state.
 
