@@ -7,7 +7,7 @@
 Charging targets, Sailing, live power, battery health history, Keep Awake, calibration, schedules, notifications, and menu bar organization.</p>
 
 <p align="center">
-  <img src="https://liwu.app/screenshots/v2-popovers/battery-popover-current.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
+  <img src="https://liwu.app/screenshots/v2-popovers/hero-popover-2.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
   <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-zones-3.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden, Visible, and Always Hidden icon groups">
 </p>
 
@@ -36,26 +36,35 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 
 ## What Liwu 2 does
 
-| Feature | Free | Pro |
-|---|:---:|:---:|
-| Charging targets and named presets | ✓ | ✓ |
-| Adapter input and battery charging/discharging power | ✓ | ✓ |
-| Keep Awake with the lid open | ✓ | ✓ |
-| Battery health history: maximum capacity and cycle count over time | ✓ | ✓ |
-| Notifications when unattended work ends, is skipped, or needs attention | ✓ | ✓ |
-| Sort menu bar icons into Always Hidden, Hidden, and Visible groups | ✓ | ✓ |
-| Show or hide the Hidden group from arrows in the menu bar | ✓ | ✓ |
-| Top Up to temporarily request 100% | | ✓ |
-| Sailing charging range | | ✓ |
-| Five-step battery calibration | | ✓ |
-| Scheduled charging targets and calibration | | ✓ |
-| Keep Awake with the lid closed | | ✓ |
+| Feature | What it does | Free | Pro |
+|---|---|:---:|:---:|
+| Charging targets · 20–100% | Set the level charging stops at. Below 80% needs supported low-target control; otherwise the minimum stays at 80% | ✓ | ✓ |
+| Named presets | Save your favorite targets and switch between them | ✓ | ✓ |
+| Power in the battery bar | Adapter input and battery charging or discharging power, with details on demand | ✓ | ✓ |
+| Menu bar organization | Sort icons into Always Hidden, Hidden, and Visible; show or hide the Hidden group from arrows in the menu bar | ✓ | ✓ |
+| Optimized Battery Charging | See when it conflicts with charging management and turn it off from Liwu | ✓ | ✓ |
+| Keep Awake · Lid Open | Keep long jobs running, with a timer and a low-battery cutoff | ✓ | ✓ |
+| Battery health history | One reading a day of maximum capacity and cycle count, charted over time | ✓ | ✓ |
+| Notifications | Hear when calibration ends, a plan does not run, or charging control needs attention | ✓ | ✓ |
+| Top Up | Temporarily request 100% without losing your regular target | | ✓ |
+| Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
+| Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
+| Target & calibration plans | Schedule targets or calibration cycles, with skip-once and catch-up | | ✓ |
+| Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
+
+The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row for row.
 
 **Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior. For targets below 80% or Sailing, the battery bar also shows a raw capacity estimate when it differs from the macOS percentage, with an explanation button for the difference.
+
+**Top Up (Pro):** requests 100% while keeping your regular target. It ends when you turn it off or unplug, and charging returns to your regular target.
 
 **Sailing (Pro):** keep your regular limit as the upper endpoint and choose a 5–20 percentage-point drop before recharging, with a lower endpoint of at least 20%. Firmware support must be confirmed first, even for limits of 80% or higher. The interval uses raw battery capacity, which can differ from the displayed percentage. Top Up temporarily suspends Sailing; calibration restores it when returning to the regular target.
 
 **Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
+
+**Plans (Pro):** set a regular target or start calibration at a time you choose: once, daily, weekly, biweekly, or monthly. Preview the next plan, skip it once, or disable it from the popover. Plans run while Liwu is running and the Mac is awake; a plan that was missed can catch up within 24 hours if you turn that on.
+
+**Optimized Battery Charging:** keep it off while Liwu manages charging. Liwu turns it off once at first startup; if it is turned back on later in System Settings, Liwu shows a warning and lets you turn it off again.
 
 **Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
 
