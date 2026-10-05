@@ -8,7 +8,7 @@ Charging targets, Sailing, live power, Keep Awake, calibration, schedules, and m
 
 <p align="center">
   <img src="https://liwu.app/screenshots/v2-popovers/battery-popover-current.png" width="330" alt="Liwu 2 Battery tab with power readings, calibration progress, and Keep Awake">
-  <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-zones.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden, Visible, and Always Hidden icon groups">
+  <img src="https://liwu.app/screenshots/v2-popovers/menu-popover-zones-2.png" width="330" alt="Liwu 2 Menu Bar tab with Hidden, Visible, and Always Hidden icon groups">
 </p>
 
 ## Choose your version
