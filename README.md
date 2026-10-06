@@ -49,20 +49,20 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Top Up | Temporarily request 100% without losing your regular target | | ✓ |
 | Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
-| Target & calibration plans | Schedule targets or calibration cycles, with skip-once and catch-up | | ✓ |
+| Target, Top Up & calibration plans | Schedule targets, Top Up or calibration cycles, with skip-once and catch-up | | ✓ |
 | Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
 
 The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row for row.
 
 **Charging targets:** choose 20–100% on supported Macs. Targets below 80% require a successful capability check; if support is unavailable or uncertain, new targets remain at 80–100%. Lower targets may actively discharge the battery while plugged in, and the stopping level can differ from the percentage macOS displays. Liwu checks submitted targets; macOS and the battery hardware determine the actual charging behavior. For targets below 80% or Sailing, the battery bar also shows a raw capacity estimate when it differs from the macOS percentage, with an explanation button for the difference.
 
-**Top Up (Pro):** requests 100% while keeping your regular target. It ends when you turn it off or unplug, and charging returns to your regular target.
+**Top Up (Pro):** requests 100% while keeping your regular target. Start it yourself, or let a plan start it at a set time. It ends when you turn it off or unplug, and charging returns to your regular target.
 
 **Sailing (Pro):** keep your regular limit as the upper endpoint and choose a 5–20 percentage-point drop before recharging, with a lower endpoint of at least 20%. Firmware support must be confirmed first, even for limits of 80% or higher. The interval uses raw battery capacity, which can differ from the displayed percentage. Top Up temporarily suspends Sailing; calibration restores it when returning to the regular target.
 
 **Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
 
-**Plans (Pro):** set a regular target or start calibration at a time you choose: once, daily, weekly, biweekly, or monthly. Preview the next plan, skip it once, or disable it from the popover. Plans run while Liwu is running and the Mac is awake; a plan that was missed can catch up within 24 hours if you turn that on.
+**Plans (Pro):** set a regular target, start Top Up, or start calibration at a time you choose: once, daily, weekly, biweekly, or monthly. A Top Up plan starts only if power is connected at that time; otherwise that run is skipped. Preview the next plan, skip it once, or disable it from the popover. Plans run while Liwu is running and the Mac is awake; a plan that was missed can catch up within 24 hours if you turn that on.
 
 **Optimized Battery Charging:** keep it off while Liwu manages charging. Liwu turns it off once at first startup; if it is turned back on later in System Settings, Liwu shows a warning and lets you turn it off again.
 
