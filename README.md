@@ -78,7 +78,7 @@ Schedules and calibration require Liwu to remain running. Closing its window kee
 
 **Homebrew removal:** `brew uninstall --cask liwu` quits Liwu and runs its controlled cleanup before removing the app, unregistering the helper and login item. Removal stops if cleanup fails. Preferences and licenses are retained. Homebrew upgrades and reinstalls run the same cleanup; re-enable **Launch at login** afterward if you use it.
 
-[Liwu Pro](https://liwu.app/#pricing) is a $5 one-time purchase with no subscription. Existing Liwu 1 Pro purchases also unlock Liwu 2 Pro.
+[Liwu Pro](https://liwu.app/#pricing) is a $9 one-time purchase with no subscription. Existing Liwu 1 Pro purchases also unlock Liwu 2 Pro.
 
 ## About this repository
 
