@@ -47,7 +47,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Optimized Battery Charging | See when it conflicts with charging management and turn it off from Liwu | ✓ | ✓ |
 | Keep Awake · Lid Open | Keep long jobs running, with a timer and a low-battery cutoff | ✓ | ✓ |
 | Battery health history | One reading a day of maximum capacity and cycle count, charted over time | ✓ | ✓ |
-| Notifications | Hear when calibration ends, a plan does not run, or charging control needs attention | ✓ | ✓ |
+| Notifications | A warning at a battery level you choose, for the Mac and for accessories that report their level to macOS; also when calibration ends, a plan does not run, or charging control needs attention | ✓ | ✓ |
 | Top Up | Temporarily request 100% without losing your regular target | | ✓ |
 | Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
@@ -72,7 +72,7 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 
 **Battery health:** Liwu records maximum capacity and cycle count once a day while it is running and charts them over time. Days when Liwu was not running are left out. Readings are stored only on your Mac, together with a hash of the battery's serial number that is used to notice a replaced battery; you can export them as CSV or clear them.
 
-**Notifications:** off until you turn them on in General or with the switch on the Schedule, Charge Control, or Keep Awake page. Liwu can tell you when calibration finishes or ends early, when a plan does not run, when Keep Awake turns itself off, and when charging control needs attention. Notifications are created on your Mac and are sent only while Liwu is running.
+**Notifications:** off until you turn them on in General or with the switch on the Schedule, Charge Control, or Keep Awake page. Liwu can tell you when calibration finishes or ends early, when a plan does not run, when Keep Awake turns itself off, and when charging control needs attention. Notifications are created on your Mac and are sent only while Liwu is running. Since 2.7.0 Liwu can also warn at a battery level you choose: once when the Mac reaches it while running on battery, and when a connected accessory that reports its battery level to macOS runs low. Those accessories are listed with their level in the menu bar popover.
 
 **Menu bar:** sort icons into three groups inside Liwu. Click the arrows that Liwu adds to the menu bar to show or hide the Hidden group; right-click them for Menu Bar settings. Icons in Always Hidden stay out of the menu bar until you move them to another group. Restore an icon by dragging it back to Visible. Liwu and fixed system controls stay visible. Quitting reveals every group; another app or system restart may require regrouping. On a crowded menu bar with a display notch, macOS may not accept a move whose drop point falls behind the notch; Liwu reports that the move was not confirmed and leaves the groups unchanged.
 
