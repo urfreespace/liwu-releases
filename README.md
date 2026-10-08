@@ -20,6 +20,8 @@ Charging targets, Sailing, live power, battery health history, Keep Awake, calib
 
 Liwu 1 is frozen and receives no further feature updates. Do not install it on macOS 26.7 or later.
 
+Liwu 2 is available in English, Simplified Chinese, German, French, Spanish, Brazilian Portuguese, Korean and Japanese. It follows your Mac's language, and you can choose one in General.
+
 ## Install Liwu 2
 
 With Homebrew:
