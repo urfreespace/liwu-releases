@@ -46,7 +46,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Menu bar organization | Sort icons into Always Hidden, Hidden, and Visible; show or hide the Hidden group from arrows in the menu bar | ✓ | ✓ |
 | Optimized Battery Charging | See when it conflicts with charging management and turn it off from Liwu | ✓ | ✓ |
 | Keep Awake · Lid Open | Keep long jobs running, with a timer and a low-battery cutoff | ✓ | ✓ |
-| Battery health history | One reading a day of maximum capacity and cycle count, charted over time | ✓ | ✓ |
+| Battery health history | One reading a day of maximum capacity and cycle count, charted over time, and a sleep report of what each recent sleep cost | ✓ | ✓ |
 | Notifications | A warning at a battery level you choose, for the Mac and for accessories that report their level to macOS; also when calibration ends, a plan does not run, or charging control needs attention | ✓ | ✓ |
 | Top Up | Temporarily request 100% without losing your regular target | | ✓ |
 | Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
@@ -71,6 +71,8 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 **Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
 
 **Battery health:** Liwu records maximum capacity and cycle count once a day while it is running and charts them over time. Days when Liwu was not running are left out. Readings are stored only on your Mac, together with a hash of the battery's serial number that is used to notice a replaced battery; you can export them as CSV or clear them.
+
+**Sleep report:** the same page lists each sleep of 15 minutes or longer found in the Mac's own power log, which goes back about a week: when it started, how long it lasted, the battery level before and after, and how often the Mac woke briefly and why. Liwu reads the log when you open the page and after the Mac wakes; the report is not stored or sent anywhere. When a sleep that ran on battery throughout lasted at least two hours and used at least five points of charge, at one point an hour or more, Liwu notifies you once after the wake; this is part of the Low battery notifications. If the log cannot be read, or no longer looks the way Liwu expects, the report says so instead of showing figures. The report shows what happened; it does not change how your Mac sleeps.
 
 **Notifications:** off until you turn them on in General or with the switch on the Schedule, Charge Control, or Keep Awake page. Liwu can tell you when calibration finishes or ends early, when a plan does not run, when Keep Awake turns itself off, and when charging control needs attention. Notifications are created on your Mac and are sent only while Liwu is running. Since 2.7.0 Liwu can also warn at a battery level you choose: once when the Mac reaches it while running on battery, and when a connected accessory that reports its battery level to macOS runs low. Those accessories are listed with their level in the menu bar popover.
 
