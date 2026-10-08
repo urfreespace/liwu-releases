@@ -42,7 +42,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 |---|---|:---:|:---:|
 | Charging targets · 20–100% | Set the level charging stops at. Below 80% needs supported low-target control; otherwise the minimum stays at 80% | ✓ | ✓ |
 | Named presets | Save your favorite targets and switch between them | ✓ | ✓ |
-| Power in the battery bar | Adapter input and battery charging or discharging power, with details on demand | ✓ | ✓ |
+| Power in the battery bar | Adapter input and battery charging or discharging power, with details on demand, including the connected adapter's name, rated power, and the voltage and current in use as macOS reports them | ✓ | ✓ |
 | Menu bar organization | Sort icons into Always Hidden, Hidden, and Visible; show or hide the Hidden group from arrows in the menu bar | ✓ | ✓ |
 | Optimized Battery Charging | See when it conflicts with charging management and turn it off from Liwu | ✓ | ✓ |
 | Keep Awake · Lid Open | Keep long jobs running, with a timer and a low-battery cutoff | ✓ | ✓ |
