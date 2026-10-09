@@ -50,12 +50,14 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Keep Awake · Lid Open | Keep long jobs running, with a timer and a low-battery cutoff | ✓ | ✓ |
 | Battery health history | One reading a day of maximum capacity and cycle count, charted over time, and a sleep report of what each recent sleep cost | ✓ | ✓ |
 | Notifications | A warning at a battery level you choose, for the Mac and for accessories that report their level to macOS; also when calibration ends, a plan does not run, or charging control needs attention | ✓ | ✓ |
+| Energy use by app · Now | Which apps are using energy right now, in watts, in the main window and the menu bar popover; processor energy of your own apps as macOS accounts for it, without the display and macOS itself | ✓ | ✓ |
 | Top Up | Temporarily request 100% without losing your regular target | | ✓ |
 | Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
 | Target, Top Up & calibration plans | Schedule targets, Top Up or calibration cycles, with skip-once and catch-up | | ✓ |
 | Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
 | Menu bar shortcut, hover & auto-hide | Show or hide the Hidden group with a keyboard shortcut, show it by resting the pointer on the empty part of the menu bar, and have it hide again by itself | | ✓ |
+| Energy use history · Last 12 hours | How much energy each app used over the last hour and the last 12 hours, in watt-hours, recorded while Liwu is running | | ✓ |
 
 The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row for row.
 
@@ -80,6 +82,8 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 **Notifications:** off until you turn them on in General or with the switch on the Schedule, Charge Control, or Keep Awake page. Liwu can tell you when calibration finishes or ends early, when a plan does not run, when Keep Awake turns itself off, and when charging control needs attention. Notifications are created on your Mac and are sent only while Liwu is running. Since 2.7.0 Liwu can also warn at a battery level you choose: once when the Mac reaches it while running on battery, and when a connected accessory that reports its battery level to macOS runs low. Those accessories are listed with their level in the menu bar popover.
 
 **Menu bar:** sort icons into three groups inside Liwu. Click the arrows that Liwu adds to the menu bar to show or hide the Hidden group; right-click them for Menu Bar settings. Icons in Always Hidden stay out of the menu bar until you move them to another group. Restore an icon by dragging it back to Visible. With Pro, Menu Bar settings add three more ways under "Show and Hide": a keyboard shortcut that shows or hides the Hidden group from any app, showing it when the pointer rests on the empty part of the menu bar, and hiding it again by itself after 5 seconds to 1 minute. Liwu and fixed system controls stay visible. Quitting reveals every group; another app or system restart may require regrouping. On a crowded menu bar with a display notch, macOS may not accept a move whose drop point falls behind the notch; Liwu reports that the move was not confirmed and leaves the groups unchanged.
+
+**Energy Use:** a page in the main window ranks apps by the energy they use: average power over the last minute, and with Pro the energy used over the last hour and the last 12 hours. The five highest also show in the menu bar popover; a switch in General turns that off. Only the processor energy of your own apps and background items is counted, as macOS accounts for it. The display, graphics and macOS system processes are not, so the list adds up to less than the Mac's total power. The record is kept in memory and starts again when Liwu restarts.
 
 Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control. The helper exits once cleanup is confirmed and no new session or operation needs it. Unresolved cleanup retains its recovery state.
 
