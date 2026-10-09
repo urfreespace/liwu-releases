@@ -55,6 +55,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
 | Target, Top Up & calibration plans | Schedule targets, Top Up or calibration cycles, with skip-once and catch-up | | ✓ |
 | Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
+| Menu bar shortcut, hover & auto-hide | Show or hide the Hidden group with a keyboard shortcut, show it by resting the pointer on the empty part of the menu bar, and have it hide again by itself | | ✓ |
 
 The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row for row.
 
@@ -78,7 +79,7 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 
 **Notifications:** off until you turn them on in General or with the switch on the Schedule, Charge Control, or Keep Awake page. Liwu can tell you when calibration finishes or ends early, when a plan does not run, when Keep Awake turns itself off, and when charging control needs attention. Notifications are created on your Mac and are sent only while Liwu is running. Since 2.7.0 Liwu can also warn at a battery level you choose: once when the Mac reaches it while running on battery, and when a connected accessory that reports its battery level to macOS runs low. Those accessories are listed with their level in the menu bar popover.
 
-**Menu bar:** sort icons into three groups inside Liwu. Click the arrows that Liwu adds to the menu bar to show or hide the Hidden group; right-click them for Menu Bar settings. Icons in Always Hidden stay out of the menu bar until you move them to another group. Restore an icon by dragging it back to Visible. Liwu and fixed system controls stay visible. Quitting reveals every group; another app or system restart may require regrouping. On a crowded menu bar with a display notch, macOS may not accept a move whose drop point falls behind the notch; Liwu reports that the move was not confirmed and leaves the groups unchanged.
+**Menu bar:** sort icons into three groups inside Liwu. Click the arrows that Liwu adds to the menu bar to show or hide the Hidden group; right-click them for Menu Bar settings. Icons in Always Hidden stay out of the menu bar until you move them to another group. Restore an icon by dragging it back to Visible. With Pro, Menu Bar settings add three more ways under "Show and Hide": a keyboard shortcut that shows or hides the Hidden group from any app, showing it when the pointer rests on the empty part of the menu bar, and hiding it again by itself after 5 seconds to 1 minute. Liwu and fixed system controls stay visible. Quitting reveals every group; another app or system restart may require regrouping. On a crowded menu bar with a display notch, macOS may not accept a move whose drop point falls behind the notch; Liwu reports that the move was not confirmed and leaves the groups unchanged.
 
 Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control. The helper exits once cleanup is confirmed and no new session or operation needs it. Unresolved cleanup retains its recovery state.
 
