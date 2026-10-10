@@ -20,7 +20,7 @@ Charging targets, Sailing, live power, battery health history, Keep Awake, calib
 
 Liwu 1 is frozen and receives no further feature updates. Do not install it on macOS 26.7 or later.
 
-**macOS 27:** Liwu 2 is built and tested on macOS 26.7. It has not been tested on macOS 27 yet. Some features may be unavailable there: targets below 80%, Sailing and calibration depend on firmware access that macOS can withhold. Liwu checks this each time it starts and tells you when a feature is unavailable. On macOS 27, try the free version before you buy Pro. Details: [Compatibility](https://liwu.app/compatibility).
+**macOS 27:** Liwu 2 has not been tested on macOS 27 yet. If something does not work as expected there, please [report it](https://github.com/urfreespace/liwu-releases/issues/new?title=macOS+27%3A+&body=What+happened%3A%0A%0AWhat+I+expected%3A%0A%0A-+Mac+model+%28Apple+menu+%E2%86%92+About+This+Mac%29%3A%0A-+macOS+version%3A%0A-+Liwu+version+%28main+window+%E2%86%92+General+%E2%86%92+Version%29%3A%0A-+Area%3A+charge+limit+%2F+Sailing+%2F+calibration+%2F+Keep+Awake+%2F+menu+bar+%2F+energy+use+%2F+other%0A%0AAnything+else+worth+knowing+%28optional%29%3A%0A) or write to support@liwu.app. Details: [Compatibility](https://liwu.app/compatibility).
 
 Liwu 2 is available in English, Simplified Chinese, German, French, Spanish, Brazilian Portuguese, Korean and Japanese. It follows your Mac's language, and you can choose one in General.
 
