@@ -54,6 +54,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Low Power Mode | macOS's Low Power Mode set from Liwu: never, always, only on battery, or only on the power adapter | ✓ | ✓ |
 | Top Up | Temporarily request 100% without losing your regular target | | ✓ |
 | Sailing · Charging range | Let the level drop 5–20 percentage points before recharging | | ✓ |
+| Heat Protection | Pause charging while the battery is hot, at a temperature you choose | | ✓ |
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
 | Target, Top Up & calibration plans | Schedule targets, Top Up or calibration cycles, with skip-once and catch-up | | ✓ |
 | Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
@@ -68,6 +69,8 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 **Top Up (Pro):** requests 100% while keeping your regular target. Start it yourself, or let a plan start it at a set time. It ends when you turn it off or unplug, and charging returns to your regular target.
 
 **Sailing (Pro):** keep your regular limit as the upper endpoint and choose a 5–20 percentage-point drop before recharging, with a lower endpoint of at least 20%. Firmware support must be confirmed first, even for limits of 80% or higher. The interval uses raw battery capacity, which can differ from the displayed percentage. Top Up temporarily suspends Sailing; calibration restores it when returning to the regular target.
+
+**Heat Protection (Pro):** while the battery is charging at or above a temperature you choose (35–45°C, 40°C to start with), Liwu pauses charging where it is until the battery is 3°C cooler. Afterwards your limit and Sailing range apply as before, so inside a Sailing range charging starts again only once the level falls below it. Liwu checks while the Mac is awake; a pause in force when the Mac goes to sleep lasts until you wake it. It needs the same confirmed firmware support as Sailing, does not pause a calibration, and does not cool the battery.
 
 **Calibration:** charge to full, discharge to 10%, recharge, hold for one hour, and return to your regular target. Start manually or from a schedule. Calibration requires connected power, supported low-target control, and Optimized Battery Charging turned off.
 
