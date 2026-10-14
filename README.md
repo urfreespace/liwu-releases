@@ -61,6 +61,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Menu bar shortcut, hover & auto-hide | Show or hide the Hidden group with a keyboard shortcut, show it by resting the pointer on the empty part of the menu bar, and have it hide again by itself | | ✓ |
 | Energy use history · Last 12 hours | Each app's share of all energy use over the last hour and the last 12 hours, in percent, from the record macOS itself keeps | | ✓ |
 | Low Power Mode · By battery level | Liwu switches Low Power Mode on when the battery falls to a level you choose, and off again once it has charged above it; works while Liwu is running | | ✓ |
+| Bluetooth off during sleep | With the lid closed and no display connected, turns Bluetooth off while the Mac sleeps, so a Mac in a bag does not connect to your headphones; back on at wake | | ✓ |
 
 The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row for row.
 
@@ -91,6 +92,8 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 **Energy Use:** a page in the main window lists the apps macOS itself counts as using significant energy over the last two minutes, the same account as the battery menu in Control Center, where an app counts with everything it started. There are no watts: macOS's measure has no unit, and each app shows one to three bars for the level it reaches. A menu beside the list sets the level from which an app is listed (Low, Medium as macOS uses, High), and a switch adds system processes and background items. With Pro, Last Hour and Last 12 Hours show each app's share of all energy use in the period, from the record macOS keeps. In the menu bar popover the list appears only while an app is listed; a switch in General turns it off. Liwu only reads this; it does not change how apps run.
 
 **Low Power Mode:** a row on the Energy Use page sets macOS's Low Power Mode to Never, Always, Only on Battery or Only on Power Adapter, the same choices as System Settings → Battery. With Pro, "On Battery at a Level" switches it on when the battery falls to a level from 10% to 50% and off again once it has charged above that level. The rule works while Liwu is running; when Liwu quits, Low Power Mode stays as it is.
+
+**Bluetooth off during sleep (Pro):** when the Mac goes to sleep with the lid closed and no display connected, Liwu turns Bluetooth off, so a Mac in a bag does not connect to the headphones you are using with your phone. When you wake the Mac, Liwu turns Bluetooth back on, unless it was already off before. A Mac asleep with its lid open, or closed with an external display, is left alone. The first time you switch it on, macOS asks you to allow Liwu to use Bluetooth. It works while Liwu is running.
 
 Schedules and calibration require Liwu to remain running. Closing its window keeps it running; quitting ends calibration and requests release of Liwu's charging control. The helper exits once cleanup is confirmed and no new session or operation needs it. Unresolved cleanup retains its recovery state.
 
