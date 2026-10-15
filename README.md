@@ -58,6 +58,7 @@ Releases are signed with a Developer ID certificate and notarized by Apple. Upda
 | Battery calibration | A five-step cycle that returns to your regular target | | ✓ |
 | Target, Top Up & calibration plans | Schedule targets, Top Up or calibration cycles, with skip-once and catch-up | | ✓ |
 | Keep Awake · Lid Closed | Keep working with the lid closed | | ✓ |
+| Keep Awake · Turn on automatically | Turns Keep Awake on while chosen apps run, while on power, or while an external display is connected, and off when that ends | | ✓ |
 | Menu bar shortcut, hover & auto-hide | Show or hide the Hidden group with a keyboard shortcut, show it by resting the pointer on the empty part of the menu bar, and have it hide again by itself | | ✓ |
 | Energy use history · Last 12 hours | Each app's share of all energy use over the last hour and the last 12 hours, in percent, from the record macOS itself keeps | | ✓ |
 | Low Power Mode · By battery level | Liwu switches Low Power Mode on when the battery falls to a level you choose, and off again once it has charged above it; works while Liwu is running | | ✓ |
@@ -79,7 +80,7 @@ The table follows the [pricing table on liwu.app](https://liwu.app/#pricing) row
 
 **Optimized Battery Charging:** keep it off while Liwu manages charging. Liwu turns it off once at first startup; if it is turned back on later in System Settings, Liwu shows a warning and lets you turn it off again.
 
-**Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed.
+**Keep Awake:** set an auto-off timer or a low-battery threshold. Low-battery protection applies while running on battery power and also prevents starting at or below the configured threshold. Liwu explains why a session stopped; historical stop notices can be dismissed. With Pro (since 2.15.0), Keep Awake can turn itself on while apps you choose are running, while the Mac is connected to power, or while an external display is connected, and off when that ends; the popover shows what is keeping it on. If you turn it off yourself, it does not turn on by itself again until those conditions have ended. When a lid-closed session ends with the lid shut and no display connected, Liwu puts the Mac to sleep, unless another app is keeping it awake.
 
 **Battery health:** Liwu records maximum capacity and cycle count once a day while it is running and charts them over time. Days when Liwu was not running are left out. Readings are stored only on your Mac, together with a hash of the battery's serial number that is used to notice a replaced battery; you can export them as CSV or clear them.
 
